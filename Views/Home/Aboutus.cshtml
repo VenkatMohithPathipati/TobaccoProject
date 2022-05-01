@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Calibri;
+            background-color: #8d2828;
+        }
+
+        table {
+            max-width: 100%;
+            margin: auto;
+        }
+
+
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            overflow-x: auto;
+        }
+
+
+
+        th {
+            padding: 5px;
+            text-align: center;
+        }
+
+
+
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+
+
+        table#TBL tr:nth-child(even) {
+            background-color: white;
+        }
+
+
+
+        table#TBL tr:nth-child(odd) {
+            background-color: white;
+        }
+
+
+
+        table#TBL th {
+            background-color: #90C1D7;
+            color: black;
+        }
+
+
+
+        .container {
+            margin: 20px;
+            width: auto;
+        }
+        /* The navbar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+
+
+            /* Navbar links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 80px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+
+
+                .topnav a:hover {
+                    background-color: #4CAF50;
+                    color: black;
+                }
+
+
+
+
+
+            .topnav .icon {
+                display: none;
+            }
+
+
+
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+
+        }
+
+
+
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        }
+    </style>
+</head>
+<body>
+    <font face="Calibri">
+        <br>
+
+
+
+        <h1 align="center">About Us </h1>
+
+
+
+        <br>
+        <div class="topnav">
+            <a href="@Url.Action("Index", "Home")">Home</a>
+            <a href="@Url.Action("TobaccoProducts", "Home")">Products</a>
+
+
+
+
+            <a class="active" href="@Url.Action("Tobaccoprotables", "Home")">Product Problems Reported</a>
+            <a class="active" href="@Url.Action("Tobproandhealth", "Home")">Product and Health Problems Reported</a>
+            <a href="@Url.Action("Aboutus", "Home")">About Us</a>
+        </div>
+
+
+
+        <script>
+function homepageFunc() {
+var x = document.getElementById("myNav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+        </script>
+
+
+
+        <p>
+            This website is made per the requirement requested by the course "Distributed Information System (ISM 6225) at University of South Florida's MUMA College of Business. This assignment helped us gain a hands-on experience on HTML, CSS and Java Script
+            <table id="TBL">
+                <tbody>
+                    <tr>
+                        <th>Team Member</th>
+                        <th>Contribution</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="display-field"><img src="Adil.jpeg" alt="Adil" style="width:128px;height:128px;" /></div>
+
+
+
+                            <br>
+                            <a href="https://www.linkedin.com/in/adil-mohd-hasan-shaikh-76935317a/">Adil Mohd Hasan Shaikh</a>
+                            <br>
+                            shaikh4@usf.edu
+                        </td>
+                        <td>A steadfast Graduate student of Business Analytics and Information Systems, Adil has 4 years of IT experience, developing and maintaining Middleware solutions using the Oracle's Fusion Middleware framawork. He is a keen aviation and railway enthusiast.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="display-field"><img src="Mo.png" alt="Mohith" style="width:128px;height:128px;" /></div>
+
+
+
+                            <br>
+                            <a href="https://www.linkedin.com/in/venkat-mohith-pathipati-3033121b0/">Venkat Mohith Pathipati</a>
+                            <br>
+                            venkatmohithp@usf.edu
+                        </td>
+                        <td>He has 2 years of experience as an iOS Developer and Business Development Associate. Venkat has pure interest in Math and Reasoning. </td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+    </font>
+
+
+
+    <h3>Data Model</h3>
+
+
+
+    <div class="display-field">
+        <img src="model.png" alt="Model" style="width:960px;height:540px;" />
+
+
+
+        <h4>API Endpoint</h4>
+
+
+
+
+        <a href="https://api.fda.gov/tobacco/">https://api.fda.gov/tobacco/"</a>
+
+
+
+        <h4>GITHUB Link</h4>
+
+
+
+        <a href="https://github.com/shaikh94/localhost_64821">https://github.com/shaikh94/localhost_64821"</a>
+
+
+
+
+</body>
+</html>
